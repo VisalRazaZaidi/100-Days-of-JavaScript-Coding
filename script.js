@@ -1,7 +1,7 @@
 // Sample project data
 const projects = [
     { day: 1, name: "Pixel Art Generator", demoLink: "/Projects/Day 1 Pixel Art generator/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/bfb40252d3108b57e5f8e85fd3b0a6ed2f6636fe/Projects/Day%201%20Pixel%20Art%20generator" },
-    { day: 2, name: "Text Editor ", demoLink: "/Projects/Day 2 Text Editor/", githubLink: "" },
+    { day: 2, name: "Text Editor ", demoLink: "/Projects/Day 2 Text Editor/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%202%20Text%20Editor" },
     { day: 3, name: "Weather App", demoLink: "#", githubLink: "#" },
     // Keep adding as you build!
   ];
