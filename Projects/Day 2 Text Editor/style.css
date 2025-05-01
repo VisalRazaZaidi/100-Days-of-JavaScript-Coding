@@ -51,7 +51,7 @@ select{
     cursor: pointer;
 }
 
-.options lable,
+.options label,
 .options select{
     font-family: 'Poppins', sans-serif;
 }
