@@ -5,6 +5,9 @@ const projects = [
     { day: 3, name: "Weather App", demoLink: "https://minimal-weather-app-ui-design.vercel.app/", githubLink: "https://github.com/VisalRazaZaidi/MinimalWeatherAppUiDesign?tab=readme-ov-file" },
     { day: 4, name: "Password Generator", demoLink: "", githubLink: "" },
     { day: 5, name: "BMI Calulator", demoLink: "/Projects/Day 5 BMI Calulator/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%205%20BMI%20Calulator" },
+    { day: 6, name: "", demoLink: "", githubLink: "" },
+    { day: 7, name: "", demoLink: "", githubLink: "" },
+    { day: 8, name: "", demoLink: "", githubLink: "" },
 
     // Keep adding as you build!
   ];
