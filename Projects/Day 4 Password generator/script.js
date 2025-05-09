@@ -1,4 +1,4 @@
-const lenghtSlider = document.querySelector(".pass-lenght input");
+const lengthSlider = document.querySelector(".pass-length input");
 const options = document.querySelectorAll(".option input");
 const copyIcon = document.querySelector(".input-box span");
 const passwordInput = document.querySelector(".input-box input");
@@ -18,7 +18,7 @@ const generatePassword = () => {
     let staticPassword = "",
     randomPassword = "",
     excludeDuplicate = false,
-    passLenght = lenghtSlider.value;
+    passLenght = lengthSlider.value;
 
     options.forEach(option =>{
         if(option.checked){
@@ -27,10 +27,49 @@ const generatePassword = () => {
             }else if (option.id === "space") {
                 staticPassword += `   {staticPassword}`;
             }else {
-                excludeDuplicate
+                excludeDuplicate = true
             }
         }
-    })
+    });
+    
+    for (let i = 0; i < passLenght; i++){
+        let randomChar = staticPassword[Math.floor(Math.random() * staticPassword.length)];
+        if(excludeDuplicate){
+            !randomPassword.includes(randomChar) || randomChar == " " ?
+            randomPassword += randomChar : i--; 
+        }else {
+            randomPassword += randomChar;
+        }
+    }
+    passwordInput.value = randomPassword;
+}
 
+const updatePassIndicator = () => {
+    if (lengthSlider.value <= 8) {
+        passIndicator.id = "weak";
+    } else if (lengthSlider.value <= 16) {
+        passIndicator.id = "medium";
+    } else {
+        passIndicator.id = "strong";
+    }
+}
+const updateSlider = () => {
+    document.querySelector(".pass-length span").innerText = lengthSlider.value;
+    generatePassword();
+    updatePassIndicator();
+}
+updateSlider();
 
-} 
+const copyPassword = () => {
+    navigator.clipboard.writeText(passwordInput.value);
+    copyIcon.innerText = "check";
+    copyIcon.style.color = "#4285f4";
+    setTimeout(() => {
+        copyIcon.innerText = "copy_all";
+        copyIcon.style.color = "#707070";
+    }, 1500);
+}
+
+copyIcon.addEventListener("click", copyPassword);
+lengthSlider.addEventListener("input", updateSlider);
+generateBtn.addEventListener("click", generatePassword);
