@@ -7,6 +7,8 @@ const projects = [
     { day: 5, name: "BMI Calulator", demoLink: "/Projects/Day 5 BMI Calulator/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%205%20BMI%20Calulator" },
     { day: 6, name: "JS Color Scheme Switcher", demoLink: "./Projects/Day 6 JS Background Changer/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%206%20JS%20Background%20Changer" },
     { day: 7, name: "Digital Clock", demoLink: "./Projects/Day 7 Digital Clock/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%207%20Digital%20Clock" },
+    { day: 8, name: "Number Guesser", demoLink: "/Projects/Day 8 Number Gusser/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%208%20Number%20Gusser" },
+    { day: 9, name: "Qr Code Generator", demoLink: "/Projects/Day 9 Qr Code Generator/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%209%20Qr%20Code%20Generator" },
     // Keep adding as you build!
   ];
   
