@@ -9,7 +9,7 @@ const projects = [
     { day: 7, name: "Digital Clock", demoLink: "./Projects/Day 7 Digital Clock/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%207%20Digital%20Clock" },
     { day: 8, name: "Number Guesser", demoLink: "/Projects/Day 8 Number Gusser/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%208%20Number%20Gusser" },
     { day: 9, name: "Qr Code Generator", demoLink: "/Projects/Day 9 Qr Code Generator/", githubLink: "https://github.com/VisalRazaZaidi/100-Days-of-JavaScript-Coding/tree/main/Projects/Day%209%20Qr%20Code%20Generator" },
-    { day: 10, name: "Personality Type Quiz", demoLink: "personality-type-quiz.vercel.app", githubLink: "https://github.com/VisalRazaZaidi/Personality_Type_Quiz" },
+    { day: 10, name: "Personality Type Quiz", demoLink: "https://personality-type-quiz.vercel.app/", githubLink: "https://github.com/VisalRazaZaidi/Personality_Type_Quiz" },
     // Keep adding as you build!
   ];
   
